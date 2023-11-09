@@ -1,0 +1,101 @@
+12factors:
+1 Codebase:
+ Should maintain the codebase with versioning system using any tool.
+2 Dependencies
+ Should maintain dependencies explicitly and not implicitly within the code bundle.
+3 Config:
+ configuration values should not be a part of code.
+ separation should be there between code and config
+ eg: environmental variables 
+4 Backing Service:
+ Resources should be loosely coupled 
+ If required should have active-active setup.
+5 Build, release, run:
+   Have various stages for deployments for rollout and rollback with versions 
+6 Processes
+  Execute the app as one or more stateless processes
+7 Port Binding
+  Export services via port binding
+8 Concurrency 
+  Scale out via the process model
+  Processes should not be daemonize and machines should scaled out horizontally.
+9 Disposability 
+  Maximize robustness with fast startup and graceful shutdown
+10 Dev/prod parity
+									Traditional app  Twelve-factor app
+	Time between deploys			Weeks			 Hours
+	Code authors vs code deployers	Different people Same people
+	Dev vs production environments	Divergent	     As similar as possible
+
+===
+Hello Team...
+
+For all budding architects here...If you are looking for architect role in your career, this is one of the best you can go through.
+
+Thanks for this thoughtful and insightful video.
+Below are take away points, observed by me.
+
+The role of the architect is to offer a solution for business needs. 
+Clear comprehension of requirements with day to day activities  
+Listen, comprehend, and take action.
+Should perceive flow holistically.
+Obtain the baseline, test it, validate it, and finally deploy.
+Be willing to experiment with new tools and technology. 
+Capable of adjusting to new challenges and technologies. 
+Improve your thinking. 
+Responds right away. 
+Roles such as cloud architect and devops architect are possible. 
+
+client business requirement 
+application function and non-funtional requirement
+geo-zone 
+RFP - request for proposal
+===================
+functional requirements 
+========================
+app logon time, transaction completion time, integration requirement - middleware and backend DB integrations 
+===================
+non-functional requirements 
+====================
+availability and dr capabilities - Recovery Time Objective (RTO) and Recovery Point Objective (RPO).SLA requirement - multiple use case 
+scalabilty
+performance 
+security 
+support/managebilty - monitoring, backup 
+capacity - 
+regulatory/compliance governance 
+geo specific 
+any reginal lanfuage support 
+transaction time limit 
+any legacy integration required for any specific setup 
+under from client situation or from theor shoes 
+stotage iops ??
+file size during transaction with usecase 
+
+risk/issue - 
+risk relared in data miration fpr data loss
+mention end user bandwidth constraints for application access over wan 
+highlight issues in legacy system/unsupported software or hardware
+
+DR and Cross Region DR 
+===
+problem description
+business expectation
+current architecture
+proposed architecture
+
+
+
+
+======================
+
+Disaster Recovery for Oracle Database on Amazon EC2:
+
+Problem Statement:
+Muliple projects in the bank using the oracle DB in one of the AZ1, but there is no alternate setup in other AZ or in other other region, if AZ1 goes down due to some reason. 
+
+Business Case:
+Solution for DB failover in alternate AZ and in other region without loss.
+
+===============
+
