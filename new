@@ -65,7 +65,7 @@ support/managebilty - monitoring, backup
 capacity - 
 regulatory/compliance governance 
 geo specific 
-any reginal lanfuage support 
+any regional language support 
 transaction time limit 
 any legacy integration required for any specific setup 
 under from client situation or from theor shoes 
@@ -77,7 +77,7 @@ risk relared in data miration fpr data loss
 mention end user bandwidth constraints for application access over wan 
 highlight issues in legacy system/unsupported software or hardware
 
-DR and Cross Region DR 
+DR and Cross Region DR  
 ===
 problem description
 business expectation
@@ -92,10 +92,12 @@ RFI/RFP
 Disaster Recovery for Oracle Database on Amazon EC2:
 
 Problem Statement:
-Muliple projects in the bank using the oracle DB in one of the AZ1, but there is no alternate setup in other AZ or in other other region, if AZ1 goes down due to some reason. 
+Muliple projects in the bank using the Oracle DB in one of the AZ1, but there is no alternate setup in other AZ or in other other region, if AZ1 goes down due to some reason. 
 
 Business Case:
-Solution for DB failover in alternate AZ and in other region without loss.
+Solution for DB failover in alternate AZ and in another region without loss.
+
+DNS: Anycast / Geo DNS 
 
 ===============
 
