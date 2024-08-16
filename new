@@ -101,3 +101,45 @@ DNS: Anycast / Geo DNS
 
 ===============
 
+after getting a clear requirement, we degisn the HLD with inscope and out of scope inclusions exclusions 
+
+Requirement Gathering
+	client business requirement : we shd think from their shoes.
+					to sit for 2/3 calls to get clear requirements 
+					identify stakeholders , SPOC of technical units 
+					what business they want to achieve out of RFP, and what business problems we will address
+	application functional requirement : application transactions, application integration (DB, middleware, ..)
+	application non-functional requirement:
+ 		: PR DR requirements and SLA with RTO(recovery time objective) RPO(recovery point objective) 
+		: How far it is scalable 
+		: How good is ints performance
+		: Security 
+		: manageability - monitoring, backup 
+		: capacity for current users and future 
+		: compliance requirement (geo, industry specific)
+		: storage IOPS
+		: Regional language support 
+		: legacy integration if required 
+      	migration requirement
+		: cost Vs time Vs
+ 		: migrate tool - corbonite or aws connect or azure migrate - license  
+	network requirement
+		: dedicated network or AWS direct connect or Azure express connect 
+	application userlinked requirement
+		: Various methods to access the application 
+		: Local/AD
+		: Application access mechanism - URL, client agent 
+		: verify with use cases
+	INscope out of scope requirement 
+ 	sizing guidelines 
+ 	arch overview 
+	risks
+	
+
+
+
+
+
+
+
+
