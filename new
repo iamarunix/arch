@@ -131,10 +131,44 @@ Requirement Gathering
 		: Application access mechanism - URL, client agent 
 		: verify with use cases
 	INscope out of scope requirement 
- 	sizing guidelines 
- 	arch overview 
-	risks
+		: Mention exclusion items clearly 
+		: Based on gathered requirement, need to articulate clearly the inscope and outofscope components
+		: Finally it ll be signed by client after understnading this 
+ 	sizing guidelines:
+		: total users count, application usage (small large xl )
+		: heavy report generation, walk through of existing applications 
+		: DB sizing witj excel calculator 
+ 	arch overview :
+		application requires email to be sent out to external users , List down all pros and cons
+		option1 : use existing SMTP mail relay server
+		pros: easy setup, no additional config 
+		cons: existing is used by hosting company , so we cont use existing SMTP
+		option2 : provision new smtp relay server
+		pros: dedicated smtp server
+		cons: complexity in implmentation and impacts project schedule
+		option3: use existing easy smtp mail server
+		pros: no additonal requiment s
+		cons: TLS support not available, no option to include external smtp server
+		otpion 4: use o365tenant and smtp server 
+		pros: microsoft supports TLS and bulk email transfer 
+		cons: additional config and slight deplay in schedule
+	Recommended: option 4, aligned with arch principles, secured and provedn solution for bulk mail relay function 
+
+
+	risks:
+	when u specify risks- mention in documentation with impacts(low medium high) , probability likelihood of occurence and migitation strategy 
+	eg:
+	end user bandwidth constraints for application access over WAN and migitation strategy 
+	data loss during miration 
+	isuues in using legacy/unsupported software hardware.
+
 	
+frameworks
+concurrent users
+access to MENA users 
+application func and non func erquirements 
+smtp server and smtp relay server 
+respurce capacity check - 
 
 
 
